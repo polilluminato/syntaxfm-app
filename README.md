@@ -1,10 +1,13 @@
-# Simple Flutter Podcast List
+# Syntax.fm Unoffical Flutter App
 
-Simple Flutter App to read data from the podcast episode on [Syntax.fm](https://syntax.fm/) through their API, display episodes list and go into episode detail. Useful to understand some concepts that can be used in Flutter Apps like:
+Syntax.fm Unoffical Flutter App to get all the shows of [Syntax.fm](https://syntax.fm/) through their API. The work is based on this post on Reddit [API for Syntax.fm Podcast](https://www.reddit.com/r/SyntaxFM/comments/nuz760/api_for_syntaxfm_podcast/) and their API endopoint
 
-- query a remote API
-- parse JSON from and API and display it
-- customize UI
+```
+https://syntax.fm/api/shows
+https://syntax.fm/api/shows/latest
+https://syntax.fm/api/sickpicks
+https://syntax.fm/api/shows/[epNumber]
+```
 
 This app is built with [Flutter](https://flutter.dev/) 2.2, with Sound Null Safety, and works out of the box on:
 
