@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 24,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: EdgeInsets.only(left: 16, bottom: 24, top: 12),
               child: Text("Shows", style: mStyles.textStyleHeadline6),
             ),
             FutureBuilder<List<Show>>(
