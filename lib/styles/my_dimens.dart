@@ -1,0 +1,1 @@
+double sizeAvatar = 36;
