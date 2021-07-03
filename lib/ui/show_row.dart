@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syntaxfm_app/models/show_model.dart';
+import 'package:syntaxfm_app/pages/singleshow_page.dart';
 import 'package:syntaxfm_app/styles/my_styles.dart' as mStyles;
 import 'package:syntaxfm_app/ui/custom_outline_buttonicon.dart';
 
@@ -12,7 +13,14 @@ class ShowRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        print('Tap on show n° ${show.number} with title: ${show.title}');
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SingleShowPage(
+              show: show,
+            ),
+          ),
+        );
       },
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
